@@ -1,0 +1,10 @@
+%h1
+	Bloge.  So Blog.  Much Posts.  Very Content.
+
+%h2
+	Much Posts.  Very Recent.
+
+-@posts.each do |post|
+	%a{href: "/posts/#{post.id}"}=post.title
+	=post.created_at.strftime('%A, %B %e %Y')
+	=post.body
