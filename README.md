@@ -1,4 +1,4 @@
-Doge started a bloge. So hip.
+Wow.  Such Blog.  Very Users.  Much Posts. 
 
 
 
