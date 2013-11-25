@@ -5,10 +5,16 @@
 
 -if @user == current_user
 	%a{href: '/new_post'} Very New Post
+	%br
+	%br
 
 -@user.posts.each do |post|
 	=post.created_at.strftime('%A, %B %e %Y')
-	=post.title
+	%br
+	%a{href: '/posts/:id'}=post.title
+	%br
 	=post.body
+	%br
+	%br
 
 

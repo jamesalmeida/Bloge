@@ -6,5 +6,12 @@
 
 -@posts.each do |post|
 	%a{href: "/posts/#{post.id}"}=post.title
+	%br
+	Posted by
+	=post.user.full_name
+	%br
 	=post.created_at.strftime('%A, %B %e %Y')
+	%br
 	=post.body
+	%br
+	%br

@@ -1,9 +1,10 @@
 %h1
-	=post.titlw
+	=@post.title
 %h2
-	=post.user.full_name
+	=@post.user.full_name
 	
 %h3
-	=post.created_at.strftime('%A, %B %e %Y')
+	=@post.created_at.strftime('%A, %B %e %Y')
 	
-=post.body
+%p
+	=@post.body
