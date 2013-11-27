@@ -89,3 +89,15 @@ li.nav {
 	color: #ff0000;
 	font-weight: bold;
 }
+
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin: 0px 0px 20px 0px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+}	
