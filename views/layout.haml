@@ -3,23 +3,26 @@
 %html
 	%head
 		%title Bloge.  So Blog.  Much Posts.  Very Content.
-		%link{rel: 'stylesheet', href: '/stylesheet.css', type: 'text/css'}
+		%link{rel: "stylesheet", href: "/stylesheet.css", type: "text/css"}
+		%link{href: 'http://fonts.googleapis.com/css?family=Cherry+Swash:400,700', rel: 'stylesheet', type: 'text/css'}	
 	%body		
 		-if flash[:notice]
-			=flash[:notice]
+			.notice=flash[:notice]
 		-if flash[:alert]
-			=flash[:alert]
-		%ul
-			%li
-				%a{href: '/'} Much Home
-			-if current_user
-				%li
-					%a{href: '/logout'} So Logout
-				%li
-					%a{href: "/users/#{current_user.id}"} Very Profile
-			-else
-				%li
-					%a{href: '/login'} So Login
-				%li
-					%a{href: 'register'} Very Register
-		=yield
+			.alert=flash[:alert]
+		#navigation
+			%ul.nav
+				%li.nav
+					%a{href: '/'} Much Home
+				-if current_user
+					%li.nav
+						%a{href: '/logout'} So Logout
+					%li.nav
+						%a{href: "/users/#{current_user.id}"} Very Profile
+				-else
+					%li.nav
+						%a{href: '/login'} So Login
+					%li.nav
+						%a{href: 'register'} Very Register
+		#wrapper
+			=yield

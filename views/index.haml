@@ -8,7 +8,7 @@
 	%a{href: "/posts/#{post.id}"}=post.title
 	%br
 	Posted by
-	=post.user.full_name
+	%a{href: "/posts/#{post.user.id}"}=post.user.full_name
 	%br
 	=post.created_at.strftime('%A, %B %e %Y')
 	%br
