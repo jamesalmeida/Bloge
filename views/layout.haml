@@ -16,9 +16,11 @@
 					%a{href: '/'} Much Home
 				-if current_user
 					%li.nav
-						%a{href: '/logout'} So Logout
-					%li.nav
 						%a{href: "/users/#{current_user.id}"} Very Profile
+					%li.nav
+						%a{href: "/new_post"} New Post
+					%li.nav
+						%a{href: '/logout'} So Logout
 				-else
 					%li.nav
 						%a{href: '/login'} So Login

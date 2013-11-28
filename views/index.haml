@@ -1,17 +1,16 @@
 %h1
-	Bloge.  So Blog.  Much Posts.  Very Content.
+	Bloge.
 
 %h2
-	Much Posts.  Very Recent.
+	Wow.  So Blog.  Much Posts.
 
 -@posts.each do |post|
-	%a{href: "/posts/#{post.id}"}=post.title
-	%br
-	Posted by
-	%a{href: "/posts/#{post.user.id}"}=post.user.full_name
-	%br
-	=post.created_at.strftime('%A, %B %e %Y')
-	%br
-	=post.body
-	%br
-	%br
+	.post_title
+		%a{href: "/posts/#{post.id}"}=post.title
+	.posted_by
+		Posted by
+		%a{href: "/users/#{post.user.id}"}=post.user.username
+	.post_time
+		=post.created_at.strftime('%A, %B %e %Y')
+	.post_text
+		=post.body.first(100) + '...'

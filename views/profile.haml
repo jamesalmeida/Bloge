@@ -1,20 +1,17 @@
 -if @user
 	%h1
-		=@user.full_name + "'s"
+		=@user.username + "'s"
 		Bloge
 
 -if @user == current_user
-	%a{href: '/new_post'} Very New Post
-	%br
-	%br
+	%h3
+		%a{href: '/new_post'} Very New Post
 
 -@user.posts.each do |post|
-	=post.created_at.strftime('%A, %B %e %Y')
-	%br
-	%a{href: '/posts/:id'}=post.title
-	%br
-	=post.body
-	%br
-	%br
-
+	.post_title
+		%a{href: "/posts/#{post.id}"}=post.title
+	.post_time
+		=post.created_at.strftime('%A, %B %e %Y')
+	.post_text
+		=post.body.first(100) + '...'
 

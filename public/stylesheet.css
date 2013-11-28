@@ -48,7 +48,10 @@ table {
 }
 
 body {
-	background-image:url('images/doge_wallpaper.png');
+	background-image:url('images/doge_wallpaper.jpg');
+	background-repeat: no-repeat;
+	background-position: fixed;
+	font-size: 12pt;
 	font-family: 'Cherry Swash', cursive;
 }
 
@@ -81,23 +84,80 @@ li.nav {
 .notice {
 	background-color: #ffffff;
 	color: #008000;
+	font-size: 24px;
 	font-weight: bold;
 }
 
 .alert {
 	background-color: #ffffff;
 	color: #ff0000;
+	font-size: 24px;
 	font-weight: bold;
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 48pt;
 	font-weight: bold;
 	margin: 0px 0px 20px 0px;
+	color: #551a8b;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 36pt;
+	margin: 0px 0px 30px 0px;
+	color: #ff0000;
+}
+
+h3 {
+	font-size: 32pt;
 	font-weight: bold;
-	margin: 0px 0px 15px 0px;
+	margin: 0px 0px 30px 0px;
+	color: #ff0000;
+
+}	
+
+.post_title {
+	margin: 10px 5px 0px 0px;
+	font-size: 24pt;
+	font-weight: bold;
+
+}
+
+.posted_by {
+	margin: 10px 0px;
+	color: #00ff00;
+}
+
+.post_time {
+	margin: 10px 0px;
+	color: #999999;
+}
+
+.post_text {
+	margin: 10px 50px 0px  0px;
+}
+
+.texarea {
+	width: 600px;
+	height: 600px
+}
+
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:active{
+	text-decoration: none;
+	color: #000000;
 }	
