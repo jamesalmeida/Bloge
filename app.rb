@@ -39,10 +39,10 @@ post '/login' do
 	@user = User.authenticate(params['user']['username'], params['user']['password'])
 	if @user
 		session[:user_id] = @user.id
-		flash[:notice] = "Wow.  Much autentication.  So user."
+		flash[:notice] = "Such autentication.  So user."
 		redirect "/users/#{current_user.id}"
 	else
-		flash[:alert] = "So error.  Much login problem."
+		flash[:alert] = "Such error.  Many login problem."
 		redirect '/register'
 	end
 end
@@ -55,10 +55,10 @@ post '/register' do
 	@user = User.new(params['user'])
 	if @user.save
 		session[:user_id] = @user.id
-		flash[:notice] = "Much successful.  So user.  Very new."
+		flash[:notice] = "Such successful.  Many user.  So new."
 		redirect '/'
 	else
-		flash[:alert] = "So error.  Much register problem."
+		flash[:alert] = "Such error.  Many register problem."
 		redirect '/register'
 	end
 end
@@ -81,9 +81,9 @@ post '/new_post' do
 	if current_user
 		@post = Post.new(title: params['title'], body: params['body'], created_at: Time.now, user_id: current_user.id)
 		if @post.save
-			flash[:notice] = "Much blog.  Very posted."
+			flash[:notice] = "Such blog.  So posted."
 		else
-			flash[:alert] = "So error.  Much posting problem."
+			flash[:alert] = "Such error.  Many posting problem."
 		end
 			redirect "/users/#{current_user.id}"
 	end
@@ -91,6 +91,6 @@ end
 
 get '/logout' do
 	session[:user_id] = nil
-	flash[:notice] = "Much logout.  So session.  Very ended."
+	flash[:notice] = "Such logout.  Many session.  So ended."
 	redirect '/'
 end 	

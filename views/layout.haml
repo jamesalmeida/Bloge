@@ -2,7 +2,7 @@
 
 %html
 	%head
-		%title Bloge.  So Blog.  Much Posts.  Very Content.
+		%title Bloge.  Such Blog.  Many Posts.  So Content.
 		%link{rel: "stylesheet", href: "/stylesheet.css", type: "text/css"}
 		%link{href: 'http://fonts.googleapis.com/css?family=Cherry+Swash:400,700', rel: 'stylesheet', type: 'text/css'}	
 	%body		
@@ -13,17 +13,17 @@
 		#navigation
 			%ul.nav
 				%li.nav
-					%a{href: '/'} Much Home
+					%a{href: '/'} Such Home
 				-if current_user
 					%li.nav
-						%a{href: "/users/#{current_user.id}"} Very Profile
+						%a{href: "/users/#{current_user.id}"} Many Profile
 					%li.nav
-						%a{href: "/new_post"} New Post
+						%a{href: "/new_post"} So New Post
 					%li.nav
-						%a{href: '/logout'} So Logout
+						%a{href: '/logout'} Such Logout
 				-else
 					%li.nav
 						%a{href: '/login'} So Login
 					%li.nav
-						%a{href: '/register'} Very Register
+						%a{href: '/register'} Many Register
 		=yield
