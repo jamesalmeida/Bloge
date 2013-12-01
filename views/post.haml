@@ -1,11 +1,13 @@
-%h1
-	=@post.title
-.posted_by
-	Posted by
-	%a{href: "/users/#{@post.user.id}"}=@post.user.username
-	
-.post_time
-	=@post.created_at.strftime('%A, %B %e %Y')
-	
-.post_text
-	=@post.body
+#header
+	%h2
+		=@post.title
+	.posted_by
+		Posted by
+		%a{href: "/users/#{@post.user.id}"}=@post.user.username
+		
+	.post_time
+		=@post.created_at.strftime('%A, %B %e %Y')
+
+#wrapper
+	.post_text
+		=@post.body

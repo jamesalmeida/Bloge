@@ -1,16 +1,19 @@
-%h1
-	Bloge.
+#header
+	%h1
+		Bloge
 
-%h2
-	Wow.  So Blog.  Much Posts.
+	%h2
+		Wow.  So Blog.  Much Posts.
 
 -@posts.each do |post|
-	.post_title
-		%a{href: "/posts/#{post.id}"}=post.title
-	.posted_by
-		Posted by
-		%a{href: "/users/#{post.user.id}"}=post.user.username
-	.post_time
-		=post.created_at.strftime('%A, %B %e %Y')
-	.post_text
-		=post.body.first(100) + '...'
+	.posts
+		.post_title
+			%a{href: "/posts/#{post.id}"}=post.title
+		.posted_by
+			Posted by
+			%a{href: "/users/#{post.user.id}"}=post.user.username
+		.post_time
+			=post.created_at.strftime('%A, %B %e %Y')
+		.post_text
+			=post.body.first(100)
+			%a{href: "/posts/#{post.id}"}=post.title + '...read more'

@@ -1,15 +1,12 @@
-%h2
-	So New.  Very Post.
+#header
+	%h2
+		So New.  Very Post.
 	
-%form{action: '/new_post', method: 'POST'}
-	%label{for: 'title'} Much Title
-	%br
-	%input{name: 'title'}
-	%br
-	%label{for: 'body'} So Body
-	%br
-	%textarea{name: 'body'}
-	%br
-	%input{type: 'submit', value: 'Very Post'}
-	%br
-	%br
+#wrapper
+	.new_post
+		%form{action: '/new_post', method: 'POST'}
+			%label{for: 'title'} Much Title
+			%input{name: 'title'}
+			%label{for: 'body'} So Body
+			%textarea{name: 'body'}
+			%input{type: 'submit', value: 'Very Post'}

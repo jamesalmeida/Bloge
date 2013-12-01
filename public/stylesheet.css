@@ -49,15 +49,14 @@ table {
 
 body {
 	background-image:url('images/doge_wallpaper.jpg');
-	background-repeat: no-repeat;
-	background-position: fixed;
+	background-repeat: repeat;
 	font-size: 12pt;
 	font-family: 'Cherry Swash', cursive;
 }
 
 #wrapper {
 	width: 800px;
-	padding: 40px;
+	padding: 20px 40px;
 	margin: 20px auto;
 	background-color: #ffffff;
 	border: 1px solid #000000;
@@ -95,6 +94,14 @@ li.nav {
 	font-weight: bold;
 }
 
+#header {
+	width: 800px;
+	padding: 20px 40px;
+	margin: 20px auto;
+	background-color: #ffffff;
+	border: 1px solid #000000;	
+}
+
 h1 {
 	font-size: 48pt;
 	font-weight: bold;
@@ -104,17 +111,33 @@ h1 {
 
 h2 {
 	font-size: 36pt;
-	margin: 0px 0px 30px 0px;
 	color: #ff0000;
 }
 
 h3 {
 	font-size: 32pt;
 	font-weight: bold;
-	margin: 0px 0px 30px 0px;
+	margin: 0px 0px 20px 0px;
 	color: #ff0000;
 
 }	
+
+.new_post {
+	width: 120px;
+	margin: 20px 10px 0px 0px;
+	padding: 10px;
+	font-size: 12pt;
+	border: 1px solid #666666;
+
+}
+
+.posts {
+	width: 800px;
+	padding: 20px 40px;
+	margin: 20px auto;
+	background-color: #ffffff;
+	border: 1px solid #000000;	
+}
 
 .post_title {
 	margin: 10px 5px 0px 0px;
@@ -135,11 +158,67 @@ h3 {
 
 .post_text {
 	margin: 10px 50px 0px  0px;
+	line-height: 1.5em;
 }
 
-.texarea {
+a.readmore {
+	color: #ff0000;
+}
+
+form {
 	width: 600px;
-	height: 600px
+}
+
+label {
+	width: 140px;
+	margin: 5px;
+	display: inline-block;
+}
+
+input {
+	width: 200px;
+	margin: 5px;
+}
+
+input.submit {
+	width: 140px;
+	margin: 5px;
+}
+
+.new_post_button {
+	width: 140px;
+	margin: 10px 0px;
+	padding: 10px;
+	font-size: 14pt;
+	border: 1px solid #000000;
+}
+
+.new_post {
+	width: 600px;
+	margin: 0px;
+	border: none;
+}
+
+.new_post label {
+	width: 200px;
+	margin: 10px 0px;
+	font-size: 18pt;
+	display: block;
+}
+
+.new_post input {
+	width: 700px;
+	margin: 10px 0px 20px 0px;
+	display: block;
+}
+
+.new_post textarea {
+	width: 700px;
+	height: 600px;
+}
+.new_post input.submit {
+	width: 100px;
+	margin: 5px;
 }
 
 a:link {

@@ -40,7 +40,7 @@ post '/login' do
 	if @user
 		session[:user_id] = @user.id
 		flash[:notice] = "Wow.  Much autentication.  So user."
-		redirect '/'
+		redirect "/users/#{current_user.id}"
 	else
 		flash[:alert] = "So error.  Much login problem."
 		redirect '/register'
