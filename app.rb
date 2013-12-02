@@ -65,6 +65,7 @@ end
 
 get '/users/:id' do
 	@user = User.find(params[:id])
+	@post = @user.posts.find(:all, :order => 'created_at DESC') 
 	haml :profile
 end
 

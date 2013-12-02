@@ -8,7 +8,7 @@
 		.new_post_button
 			%a{href: '/new_post'} Very New Post
 
--@user.posts.each do |post|
+-@post.each do |post|
 	.posts
 		.post_title
 			%a{href: "/posts/#{post.id}"}=post.title
