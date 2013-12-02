@@ -27,7 +27,7 @@ helpers do
 end
 
 get '/' do
-	@posts = Post.all
+	@posts = Post.all.reverse
 	haml :index
 end
 
