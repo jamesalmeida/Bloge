@@ -1,5 +1,5 @@
 GIT
-  remote: http://github.com/treeder/rack-flash.git
+  remote: git://github.com/treeder/rack-flash.git
   revision: 20e393cdce030f35422dba545a1fed91ed398b29
   specs:
     rack-flash3 (1.0.5)
