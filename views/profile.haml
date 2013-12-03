@@ -15,6 +15,7 @@
 		.post_time
 			=post.created_at.strftime('%A, %B %e %Y')
 		.post_text
-			=post.body.first(100)
-			%a{href: "/posts/#{post.id}"}=post.title + '...read more'
+			=post.body.first(100) + ' ' + '...'
+			%a{href: "/posts/#{post.id}"}
+			read more
 
