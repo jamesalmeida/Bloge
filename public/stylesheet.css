@@ -140,7 +140,7 @@ h3 {
 }
 
 .post_title {
-	margin: 10px 5px 0px 0px;
+	margin: 0px 0px 5px 0px;
 	font-size: 24pt;
 	font-weight: bold;
 
@@ -187,7 +187,7 @@ input.submit {
 
 .new_post_button {
 	width: 140px;
-	margin: 10px 0px;
+	margin: 20px 0px 0px 0px;
 	padding: 10px;
 	font-size: 14pt;
 	border: 1px solid #000000;

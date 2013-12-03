@@ -8,7 +8,7 @@ gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'rake'
 gem 'chronic'
-gem 'rack-flash3', :git => 'http://github.com/treeder/rack-flash.git'
+gem 'rack-flash3', :git => "git://github.com/treeder/rack-flash.git"
 gem 'bcrypt-ruby'
 
 group :development do
