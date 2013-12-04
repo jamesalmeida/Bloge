@@ -59,8 +59,15 @@ body {
 	padding: 20px 40px;
 	margin: 20px auto;
 	background-color: #ffffff;
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
 
+.login_form {
+	margin: 0 auto;
+	text-align: center;
 }
 
 #navigation {
@@ -68,7 +75,12 @@ body {
 	padding: 20px 40px;
 	margin: 20px auto;
 	background-color: #ffffff;
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	text-transform:uppercase;
 }
 
 ul.nav {
@@ -77,7 +89,7 @@ ul.nav {
 
 li.nav {
 	display: inline-block;
-	margin: 10px 50px 10px 0px;
+	margin: 10px 25px 10px 25px;
 }
 
 .notice {
@@ -99,7 +111,10 @@ li.nav {
 	padding: 20px 40px;
 	margin: 20px auto;
 	background-color: #ffffff;
-	border: 1px solid #000000;	
+	/*border: 1px solid #000000;*/	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
 h1 {
@@ -107,11 +122,13 @@ h1 {
 	font-weight: bold;
 	margin: 0px 0px 20px 0px;
 	color: #551a8b;
+	text-align: center;
 }
 
 h2 {
 	font-size: 36pt;
 	color: #ff0000;
+	text-align: center;
 }
 
 h3 {
@@ -136,7 +153,10 @@ h3 {
 	padding: 20px 40px;
 	margin: 20px auto;
 	background-color: #ffffff;
-	border: 1px solid #000000;	
+	/*border: 1px solid #000000;*/	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
 .post_title {
