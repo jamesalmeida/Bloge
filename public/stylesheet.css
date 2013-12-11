@@ -262,3 +262,20 @@ a:active{
 	text-decoration: none;
 	color: #000000;
 }	
+
+/* Mobile Styling */
+
+@media (max-width: 480px) {
+	#navigation {
+
+		padding: 20px 20px;
+	}
+
+	#header {
+		padding: 20px 20px;
+	}
+	
+	.posts {
+		padding: 20px 20px;
+	}
+}
