@@ -55,7 +55,7 @@ body {
 	font-family: 'Comic Sans MS', 'ChalkboardSE-Regular', sans-serif;
 }
 
-#wrapper {
+#form_wrapper {
 	width: 80%;
 	padding: 20px 40px;
 	margin: 20px auto;
@@ -279,7 +279,7 @@ a:active{
 		padding: 20px;
 	}
 
-	form {
+	#form_wrapper {
 		padding: 20px;
 	}
 }
