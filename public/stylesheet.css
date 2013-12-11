@@ -56,7 +56,7 @@ body {
 }
 
 #wrapper {
-	width: 800px;
+	width: 80%;
 	padding: 20px 40px;
 	margin: 20px auto;
 	background-color: #ffffff;
@@ -72,7 +72,7 @@ body {
 }
 
 #navigation {
-	width: 800px;
+	width: 80%;
 	padding: 20px 40px;
 	margin: 20px auto;
 	background-color: #ffffff;
@@ -108,7 +108,7 @@ li.nav {
 }
 
 #header {
-	width: 800px;
+	width: 80%;
 	padding: 20px 40px;
 	margin: 20px auto;
 	background-color: #ffffff;
@@ -141,7 +141,7 @@ h3 {
 }	
 
 .new_post {
-	width: 120px;
+	width: 15%;
 	margin: 20px 10px 0px 0px;
 	padding: 10px;
 	font-size: 12pt;
@@ -150,7 +150,7 @@ h3 {
 }
 
 .posts {
-	width: 800px;
+	width: 80%;
 	padding: 20px 40px;
 	margin: 20px auto;
 	background-color: #ffffff;
@@ -187,27 +187,27 @@ a.readmore {
 }
 
 form {
-	width: 600px;
+	width: 60%;
 }
 
 label {
-	width: 140px;
+	width: 15%;
 	margin: 5px;
 	display: inline-block;
 }
 
 input {
-	width: 200px;
+	width: 20%;
 	margin: 5px;
 }
 
 input.submit {
-	width: 140px;
+	width: 15%;
 	margin: 5px;
 }
 
 .new_post_button {
-	width: 140px;
+	width: 15%;
 	margin: 20px 0px 0px 0px;
 	padding: 10px;
 	font-size: 14pt;
@@ -215,26 +215,26 @@ input.submit {
 }
 
 .new_post {
-	width: 600px;
+	width: 60%;
 	margin: 0px;
 	border: none;
 }
 
 .new_post label {
-	width: 200px;
+	width: 20%;
 	margin: 10px 0px;
 	font-size: 18pt;
 	display: block;
 }
 
 .new_post input {
-	width: 700px;
+	width: 70%;
 	margin: 10px 0px 20px 0px;
 	display: block;
 }
 
 .new_post textarea {
-	width: 700px;
+	width: 70%;
 	height: 600px;
 }
 .new_post input.submit {
