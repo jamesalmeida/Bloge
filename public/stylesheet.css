@@ -50,6 +50,7 @@ table {
 body {
 	background-image:url('images/doge_wallpaper.jpg');
 	background-repeat: repeat;
+	padding: 10px;
 	font-size: 12pt;
 	font-family: 'Comic Sans MS', 'ChalkboardSE-Regular', sans-serif;
 }
